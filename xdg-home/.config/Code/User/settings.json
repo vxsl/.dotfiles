@@ -721,7 +721,7 @@
   "github.copilot.advanced": {},
   "remote.SSH.localServerDownload": "always",
   "git.openRepositoryInParentFolders": "never",
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   "keyboard.dispatch": "keyCode",
   "workbench.activityBar.location": "hidden",
   // ".dispatch": "keyCode"
