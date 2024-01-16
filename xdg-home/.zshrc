@@ -85,10 +85,6 @@ alias pacman="sudo pacman"
 alias mv="mv -vn"
 alias remobar="killall -9 xmobar; xmobar-top &; xmobar-main &"
 alias ls='ls --color=auto'
-alias dofg='dotfiles /usr/bin/git'
-alias doft='dotfiles tig'
-alias dofc='dotfiles code ~'
-alias root-dotfiles='/usr/bin/git --git-dir=/.dotfiles-root/ --work-tree=/'
 alias lsr="ls -ltr"
 alias lsar="ls -latr"
 alias fn="sudo find . -name"
