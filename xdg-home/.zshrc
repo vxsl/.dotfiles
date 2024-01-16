@@ -137,5 +137,5 @@ source /usr/share/autojump/autojump.zsh
 if [ -f "$HOME/.p10k.zsh" ]; then
     source "$HOME/.p10k.zsh"
 else
-    powerlevel10k configure
+    p10k configure
 fi
