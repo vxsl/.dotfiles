@@ -3,11 +3,6 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  // "remote.SSH.configFile": "C:\\Users\\kyle\\.ssh\\config",
-  // "remote.SSH.remotePlatform": {
-  //   "kylegrimsrudma.nz": "linux",
-  //   "login.encs.concordia.ca": "linux"
-  // },
   "terminal.integrated.profiles.linux": {
     "zsh": {
       "path": "/usr/bin/zsh"
@@ -726,7 +721,7 @@
   "github.copilot.advanced": {},
   "remote.SSH.localServerDownload": "always",
   "git.openRepositoryInParentFolders": "never",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 3,
   "keyboard.dispatch": "keyCode",
   "workbench.activityBar.location": "hidden",
   // ".dispatch": "keyCode"
