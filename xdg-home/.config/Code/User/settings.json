@@ -81,7 +81,7 @@
   "terminal.external.linuxExec": "zsh",
   "java.project.importHint": false,
   "latex-workshop.view.pdf.viewer": "tab",
-  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'JetBrains Mono', 'Liberation Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'Liberation Mono', 'JetBrainsMono Nerd Font', 'JetBrains Mono', 'Liberation Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "workbench.sideBar.location": "right",
   "[shellscript]": {
     "editor.defaultFormatter": "shakram02.bash-beautify"
@@ -90,7 +90,7 @@
   "vim.useSystemClipboard": true,
   "vim.sneak": true,
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vim.statusBarColorControl": false,
   "vim.statusBarColors.normal": [
@@ -125,6 +125,17 @@
     "<C-k>": false,
   },
   "vim.visualModeKeyBindingsNonRecursive": [
+    // {
+    //   "before": [
+    //     "u",
+    //   ],
+    //   "commands": [
+    //     "multiCommand.selectHover"
+    //     // "editor.action.showHover",
+    //     // "editor.action.showHover",
+    //   ],
+    //   "when": "isInDiffEditor"
+    // },
     {
       "before": [
         "<leader>",
@@ -193,7 +204,78 @@
       ]
     },
   ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    // {
+    //   "before": [
+    //     "<leader>",
+    //     "h",
+    //   ],
+    //   "commands": [
+    //     "workbench.action.files.save"
+    //   ],
+    // },
+    // {
+    //   "before": [
+    //     "<leader>",
+    //     ",",
+    //   ],
+    //   "commands": [
+    //     "workbench.action.files.save"
+    //   ],
+    // },
+    // {
+    //   "before": [
+    //     ",",
+    //     ",",
+    //   ],
+    //   "commands": [
+    //     "workbench.action.files.save"
+    //   ],
+    // },
+    // {
+    //   "before": [
+    //     "W",
+    //     "W",
+    //   ],
+    //   "commands": [
+    //     "workbench.action.files.save"
+    //   ],
+    // }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "h",
+      ],
+      "commands": [
+        "editor.action.organizeImports",
+        "eslint.executeAutofix",
+        "workbench.action.files.save"
+      ],
+    },
+    {
+      "before": [
+        "W",
+        "W",
+      ],
+      "commands": [
+        "editor.action.organizeImports",
+        "eslint.executeAutofix",
+        "workbench.action.files.save"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "j",
+      ],
+      "commands": [
+        "editor.action.organizeImports",
+        "eslint.executeAutofix",
+        "workbench.action.files.save"
+      ],
+    },
     {
       "before": [
         "<leader>",
@@ -723,7 +805,6 @@
   "git.openRepositoryInParentFolders": "never",
   "window.zoomLevel": 2,
   "keyboard.dispatch": "keyCode",
-  "workbench.activityBar.location": "hidden",
   // ".dispatch": "keyCode"
   "diffEditor.experimental.useVersion2": true,
   "gitTreeCompare.diffMode": "full",
@@ -737,4 +818,20 @@
     "plaintext": "true",
     "markdown": "true"
   },
+  "workbench.activityBar.location": "hidden",
+  "editor.fontLigatures": false,
+  "debug.javascript.autoAttachFilter": "always",
+  "debug.terminal.clearBeforeReusing": true,
+  "totalTypeScript.hiddenTips": [
+    "basic-types",
+    "typing-function-parameters",
+    "function-return-type",
+    "array-type",
+    "type-alias-declaration",
+    "literal-type",
+    "passing-generics-to-types",
+    "omit-utility-type"
+  ],
+  "totalTypeScript.hideBasicTips": true,
+  "totalTypeScript.hideAllTips": true,
 }
