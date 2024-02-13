@@ -66,10 +66,24 @@ run_once "volnoti"
 nitrogen --restore
 xmodmap -e "keycode 66 = Escape"
 xmodmap -e "clear Lock"
+
+# Start ActivityWatch only if not already started
+if [ -z "$AW_STARTED" ]; then
+    export AW_STARTED=true
+    cd $HOME/dev/activitywatch
+    source ./venv/bin/activate
+    nohup aw-watcher-afk > /dev/null 2>&1 &
+    nohup ./aw-server-rust/target/release/aw-server 2>&1 &
+    nohup aw-watcher-window > /dev/null 2>&1 &
+    disown
+    deactivate
+fi
+
+#  clone-firefox-profile 3 --reset &
+
 if [ -f "$HOME/.screenlayout/multihead.sh" ]; then
     source $HOME/.screenlayout/multihead.sh
 else
     configure-multihead
 fi
-# #  clone-firefox-profile 3 --reset &
 # # --------------------------------------------------------------------------------------------
