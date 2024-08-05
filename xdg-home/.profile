@@ -66,6 +66,7 @@ run_once "volnoti"
 nitrogen --restore
 xmodmap -e "keycode 66 = Escape"
 xmodmap -e "clear Lock"
+xautolock -time 30 -locker "systemctl suspend" -detectsleep &
 
 # Start ActivityWatch only if not already started
 if [ -z "$AW_STARTED" ]; then
