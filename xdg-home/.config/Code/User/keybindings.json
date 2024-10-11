@@ -349,16 +349,16 @@
         "command": "-extension.vim_ctrl+g",
         "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
     },
-    {
-        "key": "ctrl+shift+alt+i",
-        "command": "editor.action.organizeImports",
-        "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
-    },
-    {
-        "key": "ctrl+shift+alt+i",
-        "command": "eslint.executeAutofix",
-        "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
-    },
+    // {
+    //     "key": "ctrl+shift+alt+i",
+    //     "command": "editor.action.organizeImports",
+    //     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    // },
+    // {
+    //     "key": "ctrl+shift+alt+i",
+    //     "command": "eslint.executeAutofix",
+    //     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    // },
     {
         "key": "shift+alt+o",
         "command": "-editor.action.organizeImports",
@@ -760,6 +760,18 @@
         "key": "ctrl+-",
         "command": "editor.action.fontZoomOut"
     },
+    {
+        "command": "runCommands",
+        "key": "ctrl+shift+alt+i",
+        // "when": "!sideBarFocus && activeViewlet != 'workbench.panel.interactiveSessionSidebar.copilot'",
+        "args": {
+            "commands": [
+                "editor.action.organizeImports",
+                "eslint.executeAutofix",
+                "workbench.action.files.save"
+            ]
+        }
+    },
     // {
     //     "command": "runCommands",
     //     "key": "ctrl+shift+alt+space",
@@ -981,5 +993,10 @@
     {
         "key": "ctrl+alt+n",
         "command": "go-to-next-change.go-to-next-changed-file",
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "-workbench.action.quickchat.toggle",
+        "when": "chatIsEnabled"
     }
 ]

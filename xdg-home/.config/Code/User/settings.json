@@ -6,7 +6,7 @@
   "terminal.integrated.profiles.linux": {
     "zsh": {
       "path": "/usr/bin/zsh"
-    },
+    }
   },
   // "terminal.integrated.shell.linux": "/usr/bin/zsh",
   "workbench.startupEditor": "none",
@@ -122,7 +122,7 @@
   ],
   "vim.handleKeys": {
     "<C-b>": false,
-    "<C-k>": false,
+    "<C-k>": false
   },
   "vim.visualModeKeyBindingsNonRecursive": [
     // {
@@ -139,7 +139,7 @@
     {
       "before": [
         "<leader>",
-        "d",
+        "d"
         // "<End>"
         // "<C-p>"
       ],
@@ -147,7 +147,7 @@
         "multiCommand.selectHover"
         // "editor.action.showHover",
         // "editor.action.showHover",
-      ],
+      ]
     },
     {
       // https://github.com/VSCodeVim/Vim/issues/2385
@@ -161,7 +161,7 @@
     },
     {
       "before": [
-        "m",
+        "m"
         // "a",
         // "f"
       ],
@@ -177,12 +177,12 @@
       ],
       "commands": [
         // "editor.action.smartSelect.expand",
-        "editor.action.smartSelect.shrink",
+        "editor.action.smartSelect.shrink"
       ]
     },
     {
       "before": [
-        "p",
+        "p"
       ],
       "after": [
         "p",
@@ -194,7 +194,7 @@
     {
       "before": [
         "<leader>",
-        "l",
+        "l"
       ],
       "commands": [
         "editor.action.selectHighlights",
@@ -202,7 +202,7 @@
         "selection.inverse",
         "editor.action.deleteLines"
       ]
-    },
+    }
   ],
   "vim.insertModeKeyBindingsNonRecursive": [
     // {
@@ -246,40 +246,40 @@
     {
       "before": [
         "<leader>",
-        "h",
+        "h"
       ],
       "commands": [
         "editor.action.organizeImports",
         "eslint.executeAutofix",
         "workbench.action.files.save"
-      ],
+      ]
     },
     {
       "before": [
         "W",
-        "W",
+        "W"
       ],
       "commands": [
         "editor.action.organizeImports",
         "eslint.executeAutofix",
         "workbench.action.files.save"
-      ],
+      ]
     },
     {
       "before": [
         "<leader>",
-        "j",
+        "j"
       ],
       "commands": [
         "editor.action.organizeImports",
         "eslint.executeAutofix",
         "workbench.action.files.save"
-      ],
+      ]
     },
     {
       "before": [
         "<leader>",
-        "d",
+        "d"
         // "<End>"
         // "<C-p>"
       ],
@@ -287,7 +287,7 @@
         "multiCommand.selectHover"
         // "editor.action.showHover",
         // "editor.action.showHover",
-      ],
+      ]
     },
     // {
     //   "before": [
@@ -312,7 +312,7 @@
     {
       "before": [
         "<leader>",
-        "l",
+        "l"
       ],
       "after": [
         "e",
@@ -350,7 +350,7 @@
       ],
       "after": [
         "e",
-        "a",
+        "a"
       ],
       "commands": [
         "editor.action.triggerSuggest"
@@ -376,8 +376,8 @@
         "<leader>",
         // "2",
         // "s",
-        "/",
-      ],
+        "/"
+      ]
     },
     // {
     //   "before": [
@@ -397,7 +397,7 @@
     // },
     {
       "before": [
-        "u",
+        "u"
       ],
       "commands": [
         "undo"
@@ -410,7 +410,7 @@
       "commands": [
         "redo"
       ]
-    },
+    }
     // {
     //   "before": [
     //     ":",
@@ -426,15 +426,15 @@
     {
       "before": [
         "w",
-        "Enter",
+        "Enter"
       ],
       "after": [
         "Enter"
       ],
       "commands": [
-        "workbench.action.files.save",
-      ],
-    },
+        "workbench.action.files.save"
+      ]
+    }
     // //  for easymotion:
     // // https://www.ronaldjamesgroup.com/blog/10-vim-vscode-tips-that-will-supercharge-your-productivity-by-james-baldwin
     // {
@@ -580,7 +580,7 @@
   // "terminal.integrated.rendererType": "auto",
   // "terminal.integrated.gpuAcceleration`": "off",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -593,7 +593,6 @@
   },
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "javascript.preferences.importModuleSpecifier": "non-relative",
-  "terminal.integrated.gpuAcceleration": "canvas",
   // "keyboard.dispatch": "keyCode",
   "terminal.integrated.customGlyphs": false,
   "vim.foldfix": true,
@@ -627,9 +626,9 @@
         "await shellx('xdotool key \"alt+F8\"')",
         "codeCmd('editor.action.showHover')",
         "await shellx('xdotool key \"ctrl+a\"; for _ in {1..10}; do xdotool key --delay 0 \"shift+Up\"; done; xdotool key \"ctrl+c\"')",
-        "await shellx('xclip -o | tr -d \"\\n\" | node -e \"console.log(encodeURIComponent(require(\\'fs\\').readFileSync(0, \\{encoding: \\'utf8\\'})))\" | xargs -I{} firefox -P clone3 -new-tab -url \"https://www.google.com/search?q={}\"; xdotool key \"alt+o\"; xdotool key \"ctrl+9\" \"alt+9\"')",
-      ],
-    },
+        "await shellx('xclip -o | tr -d \"\\n\" | node -e \"console.log(encodeURIComponent(require(\\'fs\\').readFileSync(0, \\{encoding: \\'utf8\\'})))\" | xargs -I{} firefox -P clone3 -new-tab -url \"https://www.google.com/search?q={}\"; xdotool key \"alt+o\"; xdotool key \"ctrl+9\" \"alt+9\"')"
+      ]
+    }
   ],
   "multiCommand.commands": [
     // {
@@ -652,7 +651,7 @@
           "args": {
             "title": "search"
           }
-        },
+        }
         // "workbench.action.url.openUrl",
         // {
         //   "command": "custom-kit.runCommand",
@@ -676,7 +675,7 @@
         "workbench.action.toggleZenMode",
         "settings.cycle.ultraZen",
         // "workbench.action.reloadWindow",
-        "workbench.action.toggleZenMode",
+        "workbench.action.toggleZenMode"
       ]
     },
     {
@@ -684,26 +683,26 @@
       "label": "superSmallSidebar",
       "sequence": [
         {
-          "command": "workbench.action.focusSidebar",
+          "command": "workbench.action.focusSidebar"
         },
         {
           "command": "workbench.action.decreaseViewSize",
           "repeat": 50
         }
-      ],
+      ]
     },
     {
       "command": "multiCommand.superBigSidebar",
       "label": "superBigSidebar",
       "sequence": [
         {
-          "command": "workbench.action.focusSidebar",
-        },
+          "command": "workbench.action.focusSidebar"
+        }
         // {
         //   "command": "workbench.action.increaseViewSize",
         //   "repeat": 50
         // }
-      ],
+      ]
     },
     {
       "command": "multiCommand.openChat",
@@ -714,13 +713,13 @@
         //   "command": "workbench.action.toggleAuxiliaryBar",
         // },
         {
-          "command": "workbench.panel.interactiveSession.view.copilot.focus",
-        },
+          "command": "workbench.panel.interactiveSession.view.copilot.focus"
+        }
         // {
         //   "command": "workbench.action.increaseViewSize",
         //   "repeat": 15
         // }
-      ],
+      ]
     },
     {
       "command": "multiCommand.closeChat",
@@ -728,8 +727,8 @@
       "interval": 100,
       "sequence": [
         {
-          "command": "workbench.action.toggleAuxiliaryBar",
-        },
+          "command": "workbench.action.toggleAuxiliaryBar"
+        }
         // {
         //   "command": "workbench.panel.interactiveSession.view.copilot.focus",
         // },
@@ -740,7 +739,7 @@
         // {
         //   "command": "workbench.action.focusActiveEditorGroup",
         // }
-      ],
+      ]
     }
   ],
   "settings.cycle": [
@@ -762,7 +761,7 @@
           "editor.lineNumbers": "on",
           "editor.showTabs": "on",
           "editor.glyphMargin": false,
-          "editor.minimap.enabled": false,
+          "editor.minimap.enabled": false
         }
       ]
     }
@@ -834,4 +833,7 @@
   ],
   "totalTypeScript.hideBasicTips": true,
   "totalTypeScript.hideAllTips": true,
+  "markdown-preview-enhanced.scrollSync": false,
+  "terminal.integrated.gpuAcceleration": "off",
+  "github.copilot.editor.enableAutoCompletions": true
 }
