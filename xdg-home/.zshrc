@@ -83,6 +83,8 @@ function gcm() {
     git commit --message="$msg"
 }
 
+source $HOME/bin/personal/dr.zsh
+
 alias code="code-insiders"
 alias ls="lsd --icon never"
 alias dnf="sudo dnf"
