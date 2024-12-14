@@ -12,12 +12,16 @@ function zvm_after_init() {
 }
 
 # NOTE: install autojump-zsh from system pkg manager
+# NOTE: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
+
+
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # use antigen
 source ~/.zsh/antigen.zsh
 
 # wakatime
-antigen theme romkatv/powerlevel10k
+# antigen theme romkatv/powerlevel10k
 antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jeffreytse/zsh-vi-mode
@@ -140,3 +144,7 @@ if [ -f "$HOME/.p10k.zsh" ]; then
 else
     p10k configure
 fi
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

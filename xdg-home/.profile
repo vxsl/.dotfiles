@@ -60,13 +60,14 @@ fi
 # # run apps
 confwacom 2>/dev/null
 run_once "dunst"
-run_once "xbanish"
+# run_once "xbanish"
 run_once "volnoti"
 /usr/libexec/polkit-gnome-authentication-agent-1 &
 nitrogen --restore
 xmodmap -e "keycode 66 = Escape"
 xmodmap -e "clear Lock"
 xautolock -time 30 -locker "systemctl suspend" -detectsleep &
+picom &
 
 # Start ActivityWatch only if not already started
 if [ -z "$AW_STARTED" ]; then

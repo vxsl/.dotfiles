@@ -998,5 +998,25 @@
         "key": "ctrl+shift+alt+i",
         "command": "-workbench.action.quickchat.toggle",
         "when": "chatIsEnabled"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "md-shortcut.toggleBullets",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+b",
+        "command": "-md-shortcut.toggleBullets",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+m ctrl+x",
+        "command": "-md-shortcut.toggleCheckboxes",
+        "when": "editorTextFocus && markdownShortcuts:enabled"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
     }
 ]
