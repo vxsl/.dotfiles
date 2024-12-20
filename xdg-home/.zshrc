@@ -15,13 +15,11 @@ function zvm_after_init() {
 # NOTE: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
 
 
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
-
 # use antigen
 source ~/.zsh/antigen.zsh
 
 # wakatime
-# antigen theme romkatv/powerlevel10k
+antigen theme romkatv/powerlevel10k
 antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jeffreytse/zsh-vi-mode
