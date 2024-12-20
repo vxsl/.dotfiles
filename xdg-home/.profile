@@ -68,7 +68,7 @@ fi
 xsetroot -solid "#000000"
 xmodmap -e "keycode 66 = Escape"
 xmodmap -e "clear Lock"
-xautolock -time 30 -locker "systemctl suspend" -detectsleep &
+xidlehook --not-when-audio --timer 30 'sudo systemctl suspend' '' &
 picom &
 
 # Start ActivityWatch only if not already started
