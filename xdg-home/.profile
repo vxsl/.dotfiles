@@ -35,7 +35,6 @@ export EDITOR=nvim
 export TERM=xterm-256color
 export XMONAD_XMESSAGE=alacritty
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
-alias code="code-insiders"
 # --------------------------------------------------------------------------------------------
 
 
