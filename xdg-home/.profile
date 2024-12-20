@@ -5,6 +5,13 @@ add_to_path() {
     fi
     
     if [ -e "$1" ]; then
+        # Check if the directory is already in PATH
+        case ":$PATH:" in
+            *":$1:"*)
+                return 0
+            ;;
+        esac
+        
         if [ "$2" = "--before" ]; then
             export PATH="$1:$PATH"
         else
@@ -14,7 +21,6 @@ add_to_path() {
     else
         echo $1 doesn\'t exist, not adding to PATH
     fi
-    
 }
 
 run_once() {
@@ -23,9 +29,13 @@ run_once() {
         return 1
     fi
     
-    if ! pgrep -x "$1" >/dev/null; then
+    proc=$(echo "$1" | cut -d' ' -f1)
+    
+    if ! pgrep -x "$proc" >/dev/null; then
         echo starting $1
-        $1 &
+        eval $1 &
+    else
+        echo looks like "$proc" has already started, not starting
     fi
 }
 
@@ -69,8 +79,9 @@ fi
 xsetroot -solid "#000000"
 xmodmap -e "keycode 66 = Escape"
 xmodmap -e "clear Lock"
-xidlehook --not-when-audio --timer 30 'sudo systemctl suspend' '' &
-picom &
+
+run_once "xidlehook --not-when-audio --timer 30 'sudo systemctl suspend' ''"
+run_once "picom --backend glx"
 
 # Start ActivityWatch only if not already started
 if [ -z "$AW_STARTED" ]; then
@@ -84,11 +95,11 @@ if [ -z "$AW_STARTED" ]; then
     deactivate
 fi
 
-clone-firefox-profile 3 &
+clone-firefox-profile 3 >/dev/null 2>&1
 # clone-firefox-profile 3 --reset &
 
 if [ -f "$HOME/.screenlayout/multihead.sh" ]; then
-    source $HOME/.screenlayout/multihead.sh
+    # source $HOME/.screenlayout/multihead.sh
 else
     configure-multihead
 fi
