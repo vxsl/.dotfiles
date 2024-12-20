@@ -41,6 +41,7 @@ export XMONAD_XMESSAGE=alacritty
 
 # ============================================================================================ #
 # path
+add_to_path "/snap/bin"
 add_to_path "/usr/share/git-core/contrib"
 add_to_path "$HOME/dev/alacritty/target/release/alacritty" --before
 add_to_path "$HOME/.cargo/bin"
