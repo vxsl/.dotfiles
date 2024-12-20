@@ -135,7 +135,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-source /usr/share/autojump/autojump.zsh
+source $HOME/.zsh/autojump/bin/autojump.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if [ -f "$HOME/.p10k.zsh" ]; then
