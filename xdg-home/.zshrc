@@ -18,8 +18,10 @@ function zvm_after_init() {
 # use antigen
 source ~/.zsh/antigen.zsh
 
+# p10k
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+
 # wakatime
-antigen theme romkatv/powerlevel10k
 antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jeffreytse/zsh-vi-mode
