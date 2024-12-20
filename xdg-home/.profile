@@ -5,7 +5,7 @@ add_to_path() {
     fi
     
     if [ -e "$1" ]; then
-        if [ "$2" == "--before" ]; then
+        if [ "$2" = "--before" ]; then
             export PATH="$1:$PATH"
         else
             export PATH="$PATH:$1"
