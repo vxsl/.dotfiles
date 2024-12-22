@@ -80,7 +80,7 @@ xsetroot -solid "#000000"
 xmodmap -e "keycode 66 = Escape"
 xmodmap -e "clear Lock"
 
-run_once "xidlehook --not-when-audio --timer 30 'sudo systemctl suspend' ''"
+# run_once "xidlehook --not-when-audio --timer 30 'sudo systemctl suspend' ''"
 run_once "picom --backend glx"
 
 # Start ActivityWatch only if not already started
