@@ -56,6 +56,7 @@ add_to_path "/usr/share/git-core/contrib"
 add_to_path "$HOME/dev/alacritty/target/release/alacritty" --before
 add_to_path "$HOME/.cargo/bin"
 add_to_path "$HOME/.local/bin"
+add_to_path "/usr/local/go/bin"
 # exit
 
 # add all non-hidden subdirectories of $HOME/bin:
