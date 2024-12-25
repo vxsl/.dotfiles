@@ -1,1022 +1,1074 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+pageup",
-        "command": "-workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+shift+alt+n",
-        "command": "remote-wsl.newWindow"
-    },
-    {
-        "key": "ctrl+alt+m",
-        "command": "-code-runner.stop"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+up",
-        "command": "workbench.action.terminal.resizePaneUp"
-    },
-    {
-        "key": "ctrl+shift+alt+down",
-        "command": "workbench.action.terminal.resizePaneDown"
-    },
-    {
-        "key": "ctrl+alt+up",
-        "command": "editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+down",
-        "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "-editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+alt+[",
-        "command": "workbench.action.increaseViewSize"
-    },
-    {
-        "key": "ctrl+shift+alt+]",
-        "command": "workbench.action.decreaseViewSize"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "-extension.advancedNewFile"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "-workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "capslock f5",
-        "command": "jupyter.debugcurrentcell.palette"
-    },
-    {
-        "key": "ctrl+;",
-        "command": "cursorTop",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+home",
-        "command": "-cursorTop",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "end",
-        "command": "-cursorEnd",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+'",
-        "command": "cursorBottom",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+end",
-        "command": "-cursorBottom",
-        "when": "textInputFocus"
-    },
-    // vscode "move-line" "copy-line" commands in vimvscode
-    {
-        "key": "alt+shift+j",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+shift+k",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+k",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+j",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "vim.mode == 'Normal'"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+k r",
-        "command": "git.revertSelectedRanges",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+k ctrl+r",
-        "command": "-git.revertSelectedRanges",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+k f",
-        "command": "-workbench.action.closeFolder",
-        "when": "emptyWorkspaceSupport"
-    },
-    {
-        "key": "ctrl+k ctrl+r",
-        "command": "-workbench.action.keybindingsReference"
-    },
-    {
-        "key": "ctrl+alt+b",
-        "command": "workbench.action.toggleActivityBarVisibility"
-    },
-    {
-        "key": "ctrl+k ctrl+s",
-        "command": "-workbench.action.openGlobalKeybindings"
-    },
-    {
-        "key": "ctrl+s",
-        "command": "git.stageSelectedRanges",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+k ctrl+alt+s",
-        "command": "-git.stageSelectedRanges",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+k ctrl+s",
-        "command": "workbench.action.files.saveWithoutFormatting"
-    },
-    {
-        "key": "ctrl+k s",
-        "command": "-workbench.action.files.saveWithoutFormatting"
-    },
-    {
-        "key": "ctrl+2",
-        "command": "workbench.action.focusSecondEditorGroup",
-        "when": "multipleEditorGroups"
-    },
-    {
-        "key": "ctrl+2",
-        "command": "-workbench.action.focusSecondEditorGroup"
-    },
-    {
-        "key": "ctrl+alt+l",
-        "command": "-turboConsoleLog.displayLogMessage"
-    },
-    {
-        "command": "vscode-neovim.escape",
-        "key": "Escape",
-        "when": "editorTextFocus && neovim.init"
-    },
-    {
-        "key": "shift+alt+c shift+alt+p",
-        "command": "extension.cm_open_picker"
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "-workbench.view.scm",
-        "when": "workbench.scm.active"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "editor.action.inlineSuggest.commit",
-        "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus && !vim.active"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-    },
-    {
-        "key": "shift+alt+l",
-        "command": "turboConsoleLog.displayLogMessage"
-    },
-    // ===================================================
-    {
-        "key": "ctrl+n",
-        "command": "workbench.action.quickOpenNavigateNext",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.quickOpenNavigatePrevious",
-        "when": "inQuickOpen"
-    },
-    // {
-    //     "key": "ctrl+j",
-    //     "command": "workbench.action.quickOpenSelectNext",
-    //     "when": "inQuickOpen"
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+shift+alt+n",
+    "command": "remote-wsl.newWindow"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "-code-runner.stop"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "workbench.action.terminal.resizePaneUp"
+  },
+  {
+    "key": "ctrl+shift+alt+down",
+    "command": "workbench.action.terminal.resizePaneDown"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  // {
+  //   "key": "ctrl+shift+alt+[",
+  //   "command": "workbench.action.increaseViewSize"
+  // },
+  // {
+  //   "key": "ctrl+shift+alt+]",
+  //   "command": "workbench.action.decreaseViewSize"
+  // },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-extension.advancedNewFile"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "capslock f5",
+    "command": "jupyter.debugcurrentcell.palette"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+home",
+    "command": "-cursorTop",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "end",
+    "command": "-cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+end",
+    "command": "-cursorBottom",
+    "when": "textInputFocus"
+  },
+  // vscode "move-line" "copy-line" commands in vimvscode
+  {
+    "key": "alt+shift+j",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+k",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+k",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+k r",
+    "command": "git.revertSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-git.revertSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k f",
+    "command": "-workbench.action.closeFolder",
+    "when": "emptyWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-workbench.action.keybindingsReference"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+s",
+    "command": "-git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "-workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "workbench.action.focusSecondEditorGroup",
+    "when": "multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "-turboConsoleLog.displayLogMessage"
+  },
+  {
+    "command": "vscode-neovim.escape",
+    "key": "Escape",
+    "when": "editorTextFocus && neovim.init"
+  },
+  {
+    "key": "shift+alt+c shift+alt+p",
+    "command": "extension.cm_open_picker"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus && !vim.active"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "turboConsoleLog.displayLogMessage"
+  },
+  // ===================================================
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenNavigatePrevious",
+    "when": "inQuickOpen"
+  },
+  // {
+  //     "key": "ctrl+j",
+  //     "command": "workbench.action.quickOpenSelectNext",
+  //     "when": "inQuickOpen"
+  // },
+  // {
+  //     "key": "ctrl+k",
+  //     "command": "workbench.action.quickOpenSelectPrevious",
+  //     "when": "inQuickOpen"
+  // },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.closeEditorsAndGroup"
+  },
+  {
+    "key": "ctrl+alt+w",
+    "command": "workbench.action.closeEditorsAndGroup"
+  },
+  {
+    "key": "alt+f4",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+Escape",
+    "command": "workbench.action.terminal.focus"
+  },
+  // {
+  //     "key": "ctrl+Escape",
+  //     "command": "workbench.action.focusActiveEditorGroup",
+  //     "when": "terminalFocus"
+  // },
+  {
+    "key": "ctrl+Escape",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+Escape",
+    "command": "-workbench.action.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-vscode-neovim.ctrl-d",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-vscode-neovim.ctrl-u",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  },
+  // {
+  //     "key": "ctrl+f",
+  //     "command": "-vscode-neovim.ctrl-f",
+  //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  // },
+  // {
+  //     "key": "ctrl+b",
+  //     "command": "-vscode-neovim.ctrl-b",
+  //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+  // },
+  {
+    "command": "vscode-neovim.send",
+    "key": "ctrl+d",
+    "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
+    "args": "<C-D>"
+  },
+  {
+    "command": "vscode-neovim.send",
+    "key": "ctrl+u",
+    "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
+    "args": "<C-U>"
+  },
+  {
+    "command": "vscode-neovim.send",
+    "key": "ctrl+f",
+    "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
+    "args": "<C-F>"
+  },
+  {
+    "key": "ctrl+shift+alt+l",
+    "command": "workbench.action.splitEditorToRightGroup"
+  },
+  {
+    "key": "ctrl+shift+alt+h",
+    "command": "workbench.action.splitEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-extension.vim_ctrl+g",
+    "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
+  },
+  // {
+  //     "key": "ctrl+shift+alt+i",
+  //     "command": "editor.action.organizeImports",
+  //     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  // },
+  // {
+  //     "key": "ctrl+shift+alt+i",
+  //     "command": "eslint.executeAutofix",
+  //     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  // },
+  {
+    "key": "shift+alt+o",
+    "command": "-editor.action.organizeImports",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-extension.vim_ctrl+m",
+    "when": "editorTextFocus && vim.active && vim.use<C-m> && !inDebugRepl || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+shift+j",
+    // "command": "workbench.action.gotoSymbol"
+    // "command": "workbench.action.showAllSymbols"
+    "command": "tsimporter.openSymbol",
+    "when": "!isInSearchEditor && !searchViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+j",
+    // "command": "workbench.action.gotoSymbol"
+    "command": "workbench.action.showAllSymbols"
+    // "command": "tsimporter.openSymbol"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "-rust-analyzer.parentModule",
+    "when": "editorTextFocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "ctrl+alt+p",
+    "command": "-warmUp.start"
+  },
+  {
+    "key": "ctrl+alt+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "workbench.action.quickOpenNavigateNext"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "workbench.action.quickOpenNavigatePrevious"
+  },
+  {
+    "key": "ctrl+alt+g /",
+    "command": "gitlens.gitCommands",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g /",
+    "command": "-gitlens.gitCommands",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  // {
+  //     "key": "ctrl+x",
+  //     "command": "-editor.action.clipboardCutAction"
+  // },
+  // {
+  //     "key": "ctrl+x",
+  //     "command": "-filesExplorer.cut",
+  //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus
+  // },
+  // {
+  //     "key": "ctrl+x",
+  //     "command": "-editor.action.clipboardCutAction"
+  // },
+  {
+    "key": "ctrl+g",
+    "command": "-filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "git.openChange"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm"
+    // "command": "extension.multiCommand.execute",
+    // "args": {
+    //     "sequence": [
+    //         "workbench.view.scm",
+    //     ]
     // },
-    // {
-    //     "key": "ctrl+k",
-    //     "command": "workbench.action.quickOpenSelectPrevious",
-    //     "when": "inQuickOpen"
-    // },
-    {
-        "key": "ctrl+shift+w",
-        "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "workbench.action.closeEditorsAndGroup"
-    },
-    {
-        "key": "ctrl+alt+w",
-        "command": "workbench.action.closeEditorsAndGroup"
-    },
-    {
-        "key": "alt+f4",
-        "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+Escape",
-        "command": "workbench.action.terminal.focus"
-    },
-    // {
-    //     "key": "ctrl+Escape",
-    //     "command": "workbench.action.focusActiveEditorGroup",
-    //     "when": "terminalFocus"
-    // },
-    {
-        "key": "ctrl+Escape",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+Escape",
-        "command": "-workbench.action.toggleTerminal",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "-vscode-neovim.ctrl-d",
-        "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "-vscode-neovim.ctrl-u",
-        "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
-    },
-    // {
-    //     "key": "ctrl+f",
-    //     "command": "-vscode-neovim.ctrl-f",
-    //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
-    // },
-    // {
-    //     "key": "ctrl+b",
-    //     "command": "-vscode-neovim.ctrl-b",
-    //     "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
-    // },
-    {
-        "command": "vscode-neovim.send",
-        "key": "ctrl+d",
-        "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
-        "args": "<C-D>"
-    },
-    {
-        "command": "vscode-neovim.send",
-        "key": "ctrl+u",
-        "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
-        "args": "<C-U>"
-    },
-    {
-        "command": "vscode-neovim.send",
-        "key": "ctrl+f",
-        "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
-        "args": "<C-F>"
-    },
-    {
-        "key": "ctrl+shift+alt+l",
-        "command": "workbench.action.splitEditorToRightGroup"
-    },
-    {
-        "key": "ctrl+shift+alt+h",
-        "command": "workbench.action.splitEditorToLeftGroup"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "-workbench.action.gotoLine"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "-extension.vim_ctrl+g",
-        "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
-    },
-    // {
-    //     "key": "ctrl+shift+alt+i",
-    //     "command": "editor.action.organizeImports",
-    //     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
-    // },
-    // {
-    //     "key": "ctrl+shift+alt+i",
-    //     "command": "eslint.executeAutofix",
-    //     "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
-    // },
-    {
-        "key": "shift+alt+o",
-        "command": "-editor.action.organizeImports",
-        "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "-editor.action.toggleTabFocusMode"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "-extension.vim_ctrl+m",
-        "when": "editorTextFocus && vim.active && vim.use<C-m> && !inDebugRepl || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
-    },
-    {
-        "key": "ctrl+shift+j",
-        // "command": "workbench.action.gotoSymbol"
-        // "command": "workbench.action.showAllSymbols"
-        "command": "tsimporter.openSymbol",
-        "when": "!isInSearchEditor && !searchViewletFocus"
-    },
-    {
-        "key": "ctrl+shift+alt+j",
-        // "command": "workbench.action.gotoSymbol"
-        "command": "workbench.action.showAllSymbols"
-        // "command": "tsimporter.openSymbol"
-    },
-    {
-        "key": "ctrl+shift+u",
-        "command": "-rust-analyzer.parentModule",
-        "when": "editorTextFocus && editorLangId == 'rust'"
-    },
-    {
-        "key": "ctrl+alt+p",
-        "command": "-warmUp.start"
-    },
-    {
-        "key": "ctrl+alt+tab",
-        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.quickOpenNavigateNext"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "workbench.action.quickOpenNavigatePrevious"
-    },
-    {
-        "key": "ctrl+alt+g /",
-        "command": "gitlens.gitCommands",
-        "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
-    },
-    {
-        "key": "ctrl+shift+g /",
-        "command": "-gitlens.gitCommands",
-        "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
-    },
-    // {
-    //     "key": "ctrl+x",
-    //     "command": "-editor.action.clipboardCutAction"
-    // },
-    // {
-    //     "key": "ctrl+x",
-    //     "command": "-filesExplorer.cut",
-    //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus
-    // },
-    // {
-    //     "key": "ctrl+x",
-    //     "command": "-editor.action.clipboardCutAction"
-    // },
-    {
-        "key": "ctrl+g",
-        "command": "-filesExplorer.cut",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "git.openChange",
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "workbench.view.scm",
-        // "command": "extension.multiCommand.execute",
-        // "args": {
-        //     "sequence": [
-        //         "workbench.view.scm",
-        //     ]
-        // },
-    },
-    // {
-    //     // "key": "escape",
-    //     "key": "ctrl+shift+space",
-    //     "command": "references-view.tree.focus",
-    //     // "when": "view.references-view.tree.visible"
-    //     // "when": "isInDiffEditor && vim.mode == 'Normal'"
-    //     // "command": "extension.multiCommand.execute",
-    //     // "args": {
-    //     //     "sequence": [
-    //     //         "workbench.view.scm",
-    //     //     ]
-    //     // },
-    // },
-    {
-        "key": "ctrl+shift+space",
-        // "command": "workbench.view.search.focus",
-        "command": "workbench.action.focusAuxiliaryBar",
-        // "when": "searchViewletVisible && !sideBarFocus"
-    },
-    {
-        "key": "ctrl+shift+alt+space",
-        // "command": "workbench.view.search.focus",
-        "command": "workbench.action.focusSideBar",
-        // "when": "searchViewletVisible && !sideBarFocus"
-    },
-    {
-        "key": "ctrl+shift+space",
-        "command": "workbench.action.focusActiveEditorGroup",
-        // "when": "searchViewletVisible && sideBarFocus"
-        "when": "auxiliaryBarFocus"
-    },
-    {
-        "key": "ctrl+shift+alt+space",
-        "command": "workbench.action.focusActiveEditorGroup",
-        // "when": "searchViewletVisible && sideBarFocus"
-        "when": "sideBarFocus"
-    },
-    // {
-    //     // "key": "escape",
-    //     "key": "ctrl+shift+space",
-    //     "command": "workbench.view.scm",
-    //     "when": "!view.references-view.tree.visible"
-    //     // "when": "isInDiffEditor && vim.mode == 'Normal'"
-    //     // "command": "extension.multiCommand.execute",
-    //     // "args": {
-    //     //     "sequence": [
-    //     //         "workbench.view.scm",
-    //     //     ]
-    //     // },
-    // },
-    // {
-    //     "key": "ctrl+shift+space",
-    //     "command": "workbench.action.focusActiveEditorGroup",
-    //     "when": "sideBarFocus && (activeViewlet == 'workbench.view.scm' || view.references-view.tree.visible)"
-    // },
-    {
-        "key": "escape",
-        // "key": "ctrl+shift+space",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "sideBarFocus && (activeViewlet == 'workbench.view.scm' || view.references-view.tree.visible)"
-    },
-    {
-        "key": "ctrl+alt+h",
-        "command": "workbench.action.moveEditorToPreviousGroup"
-        // "command": "workbench.scm."
-    },
-    {
-        "key": "ctrl+alt+left",
-        "command": "-workbench.action.moveEditorToPreviousGroup"
-    },
-    {
-        "key": "ctrl+alt+l",
-        "command": "-bookmarks.jumpToNext",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+l",
-        "command": "-bookmarks.expandSelectionToNext",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+l",
-        "command": "workbench.action.moveEditorToNextGroup"
-    },
-    {
-        "key": "ctrl+alt+right",
-        "command": "-workbench.action.moveEditorToNextGroup"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.editor.nextChange",
-        "when": "editorTextFocus && !textCompareEditorActive"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "workbench.action.compareEditor.nextChange",
-        "when": "editorTextFocus && textCompareEditorActive"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "workbench.action.editor.previousChange",
-        "when": "editorTextFocus && !textCompareEditorActive"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "workbench.action.compareEditor.previousChange",
-        "when": "editorTextFocus && textCompareEditorActive"
-    },
-    {
-        "key": "ctrl+z",
-        "command": "-undo"
-    },
-    {
-        "key": "ctrl+z",
-        "command": "workbench.action.toggleZenMode",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+k z",
-        "command": "-workbench.action.toggleZenMode"
-    },
-    {
-        "key": "ctrl+shift+x",
-        "command": "workbench.action.compareEditor.focusOtherSide",
-        "when": "editorTextFocus && textCompareEditorActive"
-    },
-    {
-        "key": "ctrl+alt+1",
-        "command": "workbench.action.focusFirstSideEditor"
-    },
-    {
-        "key": "ctrl+alt+2",
-        "command": "workbench.action.focusSecondSideEditor"
-    },
-    // {
-    //     "key": "ctrl+n",
-    //     "command": "-extension.vim_ctrl+n",
-    //     "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
-    // },
-    // {
-    //     "key": "ctrl+n",
-    //     "command": "-extension.advancedNewFile",
-    //     "when": "editorTextFocus && !textCompareEditorActive"
-    // },
-    {
-        "key": "ctrl+space",
-        "command": "git.stageSelectedRanges",
-        "when": "vim.mode == 'Normal' || vim.mode == 'Visual' && isInDiffEditor && !editorReadonly"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "git.unstageSelectedRanges",
-        "when": "vim.mode == 'Normal' || vim.mode == 'Visual' && isInDiffEditor && editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "-workbench.actions.view.problems",
-        "when": "workbench.panel.markers.view.active"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusNextGroup"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusPreviousGroup"
-    },
-    // {
-    //     "key": "ctrl+i",
-    //     "command": "merge-conflict.accept.incoming",
-    //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
-    // },
-    // {
-    //     "key": "ctrl+c",
-    //     "command": "merge-conflict.accept.current",
-    //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
-    // },
-    // {
-    //     "key": "ctrl+a",
-    //     "command": "merge-conflict.accept.both",
-    //     // "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
-    //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
-    // },
-    {
-        "key": "ctrl+shift+s",
-        "command": "-workbench.action.files.saveAs"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "chatgpt-vscode.freeText"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "git.openFile",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "-workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+p",
-        "when": "!suggestWidgetVisible && !inQuickOpen",
-        "command": "workbench.action.showAllEditors"
-    },
-    {
-        "key": "ctrl+k ctrl+p",
-        "command": "-workbench.action.showAllEditors"
-    },
-    {
-        "key": "ctrl+k ctrl+p",
-        "command": "workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
-    },
-    // {
-    //     "key": "ctrl+alt+space",
-    //     "command": "chatgpt-vscode.oneShot"
-    // },
-    // {
-    //     "key": "ctrl+alt+space",
-    //     "command": "workbench.view.extension.chatgpt-vscode-view-container"
-    // },
-    // {
-    //     "key": "ctrl+alt+space",
-    //     "command": "codegpt.getCode"
-    // },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-codegpt.getCode"
-    },
-    {
-        "key": "ctrl+shift+alt+r",
-        "command": "references-view.tree.focus"
-    },
-    // {
-    //     "key": "ctrl+alt+shift+space",
-    //     "command": "workbench.action.focusSidebar",
-    //     // "when": "editorTextFocus"
-    // },
-    {
-        "key": "f4",
-        "command": "references-view.next",
-        "when": "reference-list.hasResult && view.references-view.tree.visible"
-    },
-    // {
-    //     "key": "f4",
-    //     "command": "-references-view.next",
-    //     "when": "reference-list.hasResult && references-view.canNavigate"
-    // },
-    {
-        "key": "shift+f4",
-        "command": "references-view.prev",
-        "when": "reference-list.hasResult && view.references-view.tree.visible"
-    },
-    // {
-    //     "key": "shift+f4",
-    //     "command": "-references-view.prev",
-    //     "when": "reference-list.hasResult && references-view.canNavigate"
-    // },
-    {
-        "key": "f3",
-        "command": "search.action.focusNextSearchResult",
-        // "when": "hasSearchResult && !view.references-view.tree.visible|| inSearchEditor && !view.references-view.tree.visible "
-    },
-    // {
-    //     "key": "f4",
-    //     "command": "-search.action.focusNextSearchResult",
-    //     // "when": "hasSearchResult || inSearchEditor"
-    // },
-    {
-        "key": "shift+f3",
-        "command": "search.action.focusPreviousSearchResult",
-        // "when": "hasSearchResult && !view.references-view.tree.visible|| inSearchEditor && !view.references-view.tree.visible "
-    },
-    // {
-    //     "key": "shift+f4",
-    //     "command": "-search.action.focusPreviousSearchResult",
-    //     // "when": "hasSearchResult || inSearchEditor"
-    // },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-selection.inverse",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+-",
-        "command": "workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+-",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+alt+=",
-        "command": "workbench.action.zoomIn"
-    },
-    {
-        "key": "ctrl+=",
-        "command": "-workbench.action.zoomIn"
-    },
-    {
-        "key": "ctrl+=",
-        "command": "editor.action.fontZoomIn"
-    },
-    {
-        "key": "ctrl+-",
-        "command": "editor.action.fontZoomOut"
-    },
-    {
-        "command": "runCommands",
-        "key": "ctrl+shift+alt+i",
-        // "when": "!sideBarFocus && activeViewlet != 'workbench.panel.interactiveSessionSidebar.copilot'",
-        "args": {
-            "commands": [
-                "editor.action.organizeImports",
-                "eslint.executeAutofix",
-                "workbench.action.files.save"
-            ]
-        }
-    },
-    // {
-    //     "command": "runCommands",
-    //     "key": "ctrl+shift+alt+space",
-    //     // "when": "!sideBarFocus && activeViewlet != 'workbench.panel.interactiveSessionSidebar.copilot'",
-    //     "when": "!sideBarFocus",
-    //     "args": {
-    //         "commands": [
-    //             "workbench.panel.interactiveSession.view.copilot.focus",
-    //             // "workbench.action.toggleEditorWidths",
-    //             {
-    //                 "command": "extension.multiCommand.execute",
-    //                 "args": {
-    //                     "sequence": [
-    //                         "workbench.action.increaseViewSize",
-    //                     ]
-    //                     // "interval": 50,
-    //                 },
-    //                 "repeat": 160
-    //             }
-    //         ]
-    //     }
-    // },
-    // {
-    //     "key": "shift+alt+space",
-    //     // "command": "multiCommand.openChat",
-    //     "command": "workbench.action.toggleAuxiliaryBar",
-    //     "when": "!auxiliaryBarFocus",
-    //     // "label": "openChat",
-    //     // "sequence": [
-    //     //     {
-    //     //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
-    //     //     },
-    //     //     {
-    //     //         "command": "workbench.action.increaseViewSize",
-    //     //         "repeat": 15
-    //     //     }
-    //     // ],
-    // },
-    {
-        "key": "shift+alt+space",
-        // "command": "workbench.action.toggleAuxiliaryBar",
-        "command": "multiCommand.openChat",
-        "when": "!auxiliaryBarFocus",
-        // "when": "secondarySidebarFocus",
-        // "label": "openChat",
-        // "sequence": [
-        //     {
-        //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
-        //     },
-        //     {
-        //         "command": "workbench.action.increaseViewSize",
-        //         "repeat": 15
-        //     }
-        // ],
-    },
-    {
-        "key": "shift+alt+space",
-        // "command": "workbench.action.toggleAuxiliaryBar",
-        "command": "multiCommand.closeChat",
-        "when": "auxiliaryBarFocus",
-        // "when": "secondarySidebarFocus",
-        // "label": "openChat",
-        // "sequence": [
-        //     {
-        //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
-        //     },
-        //     {
-        //         "command": "workbench.action.increaseViewSize",
-        //         "repeat": 15
-        //     }
-        // ],
-    },
-    // {
-    //     "key": "ctrl+shift+alt+space",
-    //     "command": "multiCommand.superSmallSidebar",
-    //     // "when": "sideBarSize <= 0.2"
-    //     // "label": "openChat",
-    //     // "sequence": [
-    //     //     {
-    //     //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
-    //     //     },
-    //     //     {
-    //     //         "command": "workbench.action.increaseViewSize",
-    //     //         "repeat": 15
-    //     //     }
-    //     // ],
-    // },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build",
-        "when": "taskCommandsRegistered"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "workbench.action.toggleAuxiliaryBar"
-    },
-    {
-        "key": "ctrl+alt+b",
-        "command": "-workbench.action.toggleAuxiliaryBar"
-    },
-    // {
-    //     "key": "ctrl+shift+alt+f",
-    //     // "command": "workbench.view.search.focus",
-    //     "command": "multiCommand.focusSearchResults",
-    //     // "when": "searchViewletVisible && !sideBarFocus"
-    // },
-    {
-        "key": "f3",
-        "command": "-editor.action.nextMatchFindAction",
-        "when": "editorFocus"
-    },
-    {
-        "key": "f3",
-        "command": "-workbench.action.terminal.findNext",
-        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "shift+f3",
-        "command": "-editor.action.previousMatchFindAction",
-        "when": "editorFocus"
-    },
-    {
-        "key": "shift+f3",
-        "command": "-workbench.action.terminal.findPrevious",
-        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "f4",
-        "command": "-references-view.next",
-        "when": "reference-list.hasResult && references-view.canNavigate"
-    },
-    {
-        "key": "shift+f4",
-        "command": "-references-view.prev",
-        "when": "reference-list.hasResult && references-view.canNavigate"
-    },
-    {
-        "key": "f4",
-        "command": "-goToNextReference",
-        "when": "inReferenceSearchEditor || referenceSearchVisible"
-    },
-    {
-        "key": "shift+f4",
-        "command": "-goToPreviousReference",
-        "when": "inReferenceSearchEditor || referenceSearchVisible"
-    },
-    // {
-    //     "key": "ctrl+shift+f",
-    //     "command": "workbench.view.search.focus",
-    //     // "when": "inReferenceSearchEditor || referenceSearchVisible"
-    // },
-    {
-        "key": "ctrl+]",
-        "command": "editor.gotoNextFold"
-    },
-    {
-        "key": "ctrl+[",
-        "command": "editor.gotoPreviousFold"
-    },
-    {
-        "key": "ctrl+alt+[",
-        "command": "editor.gotoParentFold"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "editor.action.selectAll",
-        "when": "editorTextFocus && !editorHoverFocused && !vim.active"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "-editor.action.selectAll"
-    },
-    {
-        "key": "ctrl+i",
-        "command": "extension.vim_ctrl+i",
-        "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl  && vim.mode == 'Normal'"
-    },
-    {
-        "key": "ctrl+i",
-        "command": "-extension.vim_ctrl+i",
-        "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "workbench.action.toggleMaximizeEditorGroup",
-        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
-    },
-    {
-        "key": "ctrl+k ctrl+m",
-        "command": "-workbench.action.toggleMaximizeEditorGroup",
-        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
-    },
-    {
-        "key": "ctrl+alt+m",
-        "command": "workbench.action.toggleCenteredLayout"
-    },
-    {
-        "key": "ctrl+shift+alt+z",
-        "command": "go-to-next-change.go-to-previous-changed-file"
-    },
-    {
-        "key": "ctrl+alt+a",
-        "command": "-go-to-next-change.go-to-previous-changed-file"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "go-to-next-change.go-to-previous-changed-file",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "go-to-next-change.go-to-next-changed-file",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+alt+p",
-        "command": "go-to-next-change.go-to-previous-changed-file",
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "go-to-next-change.go-to-next-changed-file",
-    },
-    {
-        "key": "ctrl+shift+alt+i",
-        "command": "-workbench.action.quickchat.toggle",
-        "when": "chatIsEnabled"
-    },
-    {
-        "key": "ctrl+shift+k",
-        "command": "md-shortcut.toggleBullets",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
-    },
-    {
-        "key": "ctrl+m ctrl+b",
-        "command": "-md-shortcut.toggleBullets",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
-    },
-    {
-        "key": "ctrl+m ctrl+x",
-        "command": "-md-shortcut.toggleCheckboxes",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-workbench.action.chat.openEditSession",
-        "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+  },
+  // {
+  //     // "key": "escape",
+  //     "key": "ctrl+shift+space",
+  //     "command": "references-view.tree.focus",
+  //     // "when": "view.references-view.tree.visible"
+  //     // "when": "isInDiffEditor && vim.mode == 'Normal'"
+  //     // "command": "extension.multiCommand.execute",
+  //     // "args": {
+  //     //     "sequence": [
+  //     //         "workbench.view.scm",
+  //     //     ]
+  //     // },
+  // },
+  {
+    "key": "ctrl+shift+space",
+    // "command": "workbench.view.search.focus",
+    "command": "workbench.action.focusAuxiliaryBar"
+    // "when": "searchViewletVisible && !sideBarFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+space",
+    // "command": "workbench.view.search.focus",
+    "command": "workbench.action.focusSideBar"
+    // "when": "searchViewletVisible && !sideBarFocus"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "workbench.action.focusActiveEditorGroup",
+    // "when": "searchViewletVisible && sideBarFocus"
+    "when": "auxiliaryBarFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+space",
+    "command": "workbench.action.focusActiveEditorGroup",
+    // "when": "searchViewletVisible && sideBarFocus"
+    "when": "sideBarFocus"
+  },
+  // {
+  //     // "key": "escape",
+  //     "key": "ctrl+shift+space",
+  //     "command": "workbench.view.scm",
+  //     "when": "!view.references-view.tree.visible"
+  //     // "when": "isInDiffEditor && vim.mode == 'Normal'"
+  //     // "command": "extension.multiCommand.execute",
+  //     // "args": {
+  //     //     "sequence": [
+  //     //         "workbench.view.scm",
+  //     //     ]
+  //     // },
+  // },
+  // {
+  //     "key": "ctrl+shift+space",
+  //     "command": "workbench.action.focusActiveEditorGroup",
+  //     "when": "sideBarFocus && (activeViewlet == 'workbench.view.scm' || view.references-view.tree.visible)"
+  // },
+  {
+    "key": "escape",
+    // "key": "ctrl+shift+space",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "sideBarFocus && (activeViewlet == 'workbench.view.scm' || view.references-view.tree.visible)"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+    // "command": "workbench.scm."
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "-bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "-bookmarks.expandSelectionToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "editorTextFocus && textCompareEditorActive"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "editorTextFocus && textCompareEditorActive"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "-undo"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.toggleZenMode",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k z",
+    "command": "-workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+shift+x",
+    "command": "workbench.action.compareEditor.focusOtherSide",
+    "when": "editorTextFocus && textCompareEditorActive"
+  },
+  {
+    "key": "ctrl+alt+1",
+    "command": "workbench.action.focusFirstSideEditor"
+  },
+  {
+    "key": "ctrl+alt+2",
+    "command": "workbench.action.focusSecondSideEditor"
+  },
+  // {
+  //     "key": "ctrl+n",
+  //     "command": "-extension.vim_ctrl+n",
+  //     "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  // },
+  // {
+  //     "key": "ctrl+n",
+  //     "command": "-extension.advancedNewFile",
+  //     "when": "editorTextFocus && !textCompareEditorActive"
+  // },
+  {
+    "key": "ctrl+space",
+    "command": "git.stageSelectedRanges",
+    "when": "vim.mode == 'Normal' || vim.mode == 'Visual' && isInDiffEditor && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "git.unstageSelectedRanges",
+    "when": "vim.mode == 'Normal' || vim.mode == 'Visual' && isInDiffEditor && editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "-workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  // {
+  //     "key": "ctrl+i",
+  //     "command": "merge-conflict.accept.incoming",
+  //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
+  // },
+  // {
+  //     "key": "ctrl+c",
+  //     "command": "merge-conflict.accept.current",
+  //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
+  // },
+  // {
+  //     "key": "ctrl+a",
+  //     "command": "merge-conflict.accept.both",
+  //     // "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
+  //     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorFocus"
+  // },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "chatgpt-vscode.freeText"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "git.openFile",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "when": "!suggestWidgetVisible && !inQuickOpen",
+    "command": "workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+p",
+    "command": "-workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  // {
+  //     "key": "ctrl+alt+space",
+  //     "command": "chatgpt-vscode.oneShot"
+  // },
+  // {
+  //     "key": "ctrl+alt+space",
+  //     "command": "workbench.view.extension.chatgpt-vscode-view-container"
+  // },
+  // {
+  //     "key": "ctrl+alt+space",
+  //     "command": "codegpt.getCode"
+  // },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-codegpt.getCode"
+  },
+  {
+    "key": "ctrl+shift+alt+r",
+    "command": "references-view.tree.focus"
+  },
+  // {
+  //     "key": "ctrl+alt+shift+space",
+  //     "command": "workbench.action.focusSidebar",
+  //     // "when": "editorTextFocus"
+  // },
+  {
+    "key": "f4",
+    "command": "references-view.next",
+    "when": "reference-list.hasResult && view.references-view.tree.visible"
+  },
+  // {
+  //     "key": "f4",
+  //     "command": "-references-view.next",
+  //     "when": "reference-list.hasResult && references-view.canNavigate"
+  // },
+  {
+    "key": "shift+f4",
+    "command": "references-view.prev",
+    "when": "reference-list.hasResult && view.references-view.tree.visible"
+  },
+  // {
+  //     "key": "shift+f4",
+  //     "command": "-references-view.prev",
+  //     "when": "reference-list.hasResult && references-view.canNavigate"
+  // },
+  {
+    "key": "f3",
+    "command": "search.action.focusNextSearchResult"
+    // "when": "hasSearchResult && !view.references-view.tree.visible|| inSearchEditor && !view.references-view.tree.visible "
+  },
+  // {
+  //     "key": "f4",
+  //     "command": "-search.action.focusNextSearchResult",
+  //     // "when": "hasSearchResult || inSearchEditor"
+  // },
+  {
+    "key": "shift+f3",
+    "command": "search.action.focusPreviousSearchResult"
+    // "when": "hasSearchResult && !view.references-view.tree.visible|| inSearchEditor && !view.references-view.tree.visible "
+  },
+  // {
+  //     "key": "shift+f4",
+  //     "command": "-search.action.focusPreviousSearchResult",
+  //     // "when": "hasSearchResult || inSearchEditor"
+  // },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-selection.inverse",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+-",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+alt+=",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "command": "runCommands",
+    "key": "ctrl+shift+alt+i",
+    // "when": "!sideBarFocus && activeViewlet != 'workbench.panel.interactiveSessionSidebar.copilot'",
+    "args": {
+      "commands": [
+        "editor.action.organizeImports",
+        "eslint.executeAutofix",
+        "workbench.action.files.save"
+      ]
     }
+  },
+  // {
+  //     "command": "runCommands",
+  //     "key": "ctrl+shift+alt+space",
+  //     // "when": "!sideBarFocus && activeViewlet != 'workbench.panel.interactiveSessionSidebar.copilot'",
+  //     "when": "!sideBarFocus",
+  //     "args": {
+  //         "commands": [
+  //             "workbench.panel.interactiveSession.view.copilot.focus",
+  //             // "workbench.action.toggleEditorWidths",
+  //             {
+  //                 "command": "extension.multiCommand.execute",
+  //                 "args": {
+  //                     "sequence": [
+  //                         "workbench.action.increaseViewSize",
+  //                     ]
+  //                     // "interval": 50,
+  //                 },
+  //                 "repeat": 160
+  //             }
+  //         ]
+  //     }
+  // },
+  // {
+  //     "key": "shift+alt+space",
+  //     // "command": "multiCommand.openChat",
+  //     "command": "workbench.action.toggleAuxiliaryBar",
+  //     "when": "!auxiliaryBarFocus",
+  //     // "label": "openChat",
+  //     // "sequence": [
+  //     //     {
+  //     //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
+  //     //     },
+  //     //     {
+  //     //         "command": "workbench.action.increaseViewSize",
+  //     //         "repeat": 15
+  //     //     }
+  //     // ],
+  // },
+  {
+    "key": "shift+alt+space",
+    // "command": "workbench.action.toggleAuxiliaryBar",
+    "command": "multiCommand.openChat",
+    "when": "!auxiliaryBarFocus"
+    // "when": "secondarySidebarFocus",
+    // "label": "openChat",
+    // "sequence": [
+    //     {
+    //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
+    //     },
+    //     {
+    //         "command": "workbench.action.increaseViewSize",
+    //         "repeat": 15
+    //     }
+    // ],
+  },
+  {
+    "key": "shift+alt+space",
+    // "command": "workbench.action.toggleAuxiliaryBar",
+    "command": "multiCommand.closeChat",
+    "when": "auxiliaryBarFocus"
+    // "when": "secondarySidebarFocus",
+    // "label": "openChat",
+    // "sequence": [
+    //     {
+    //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
+    //     },
+    //     {
+    //         "command": "workbench.action.increaseViewSize",
+    //         "repeat": 15
+    //     }
+    // ],
+  },
+  // {
+  //     "key": "ctrl+shift+alt+space",
+  //     "command": "multiCommand.superSmallSidebar",
+  //     // "when": "sideBarSize <= 0.2"
+  //     // "label": "openChat",
+  //     // "sequence": [
+  //     //     {
+  //     //         "command": "workbench.panel.interactiveSession.view.copilot.focus",
+  //     //     },
+  //     //     {
+  //     //         "command": "workbench.action.increaseViewSize",
+  //     //         "repeat": 15
+  //     //     }
+  //     // ],
+  // },
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  // {
+  //     "key": "ctrl+shift+alt+f",
+  //     // "command": "workbench.view.search.focus",
+  //     "command": "multiCommand.focusSearchResults",
+  //     // "when": "searchViewletVisible && !sideBarFocus"
+  // },
+  {
+    "key": "f3",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f3",
+    "command": "-workbench.action.terminal.findNext",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "shift+f3",
+    "command": "-editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+f3",
+    "command": "-workbench.action.terminal.findPrevious",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "f4",
+    "command": "-references-view.next",
+    "when": "reference-list.hasResult && references-view.canNavigate"
+  },
+  {
+    "key": "shift+f4",
+    "command": "-references-view.prev",
+    "when": "reference-list.hasResult && references-view.canNavigate"
+  },
+  {
+    "key": "f4",
+    "command": "-goToNextReference",
+    "when": "inReferenceSearchEditor || referenceSearchVisible"
+  },
+  {
+    "key": "shift+f4",
+    "command": "-goToPreviousReference",
+    "when": "inReferenceSearchEditor || referenceSearchVisible"
+  },
+  // {
+  //     "key": "ctrl+shift+f",
+  //     "command": "workbench.view.search.focus",
+  //     // "when": "inReferenceSearchEditor || referenceSearchVisible"
+  // },
+  {
+    "key": "ctrl+]",
+    "command": "editor.gotoNextFold"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "editor.gotoPreviousFold"
+  },
+  {
+    "key": "ctrl+alt+[",
+    "command": "editor.gotoParentFold"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "editor.action.selectAll",
+    "when": "editorTextFocus && !editorHoverFocused && !vim.active"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "-editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "extension.vim_ctrl+i",
+    "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl  && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-extension.vim_ctrl+i",
+    "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.action.toggleMaximizeEditorGroup",
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "-workbench.action.toggleMaximizeEditorGroup",
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "workbench.action.toggleCenteredLayout"
+  },
+  {
+    "key": "ctrl+shift+alt+z",
+    "command": "go-to-next-change.go-to-previous-changed-file"
+  },
+  {
+    "key": "ctrl+alt+a",
+    "command": "-go-to-next-change.go-to-previous-changed-file"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "go-to-next-change.go-to-previous-changed-file",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "go-to-next-change.go-to-next-changed-file",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+alt+p",
+    "command": "go-to-next-change.go-to-previous-changed-file"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "go-to-next-change.go-to-next-changed-file"
+  },
+  {
+    "key": "ctrl+shift+alt+i",
+    "command": "-workbench.action.quickchat.toggle",
+    "when": "chatIsEnabled"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "md-shortcut.toggleBullets",
+    "when": "editorTextFocus && markdownShortcuts:enabled"
+  },
+  {
+    "key": "ctrl+m ctrl+b",
+    "command": "-md-shortcut.toggleBullets",
+    "when": "editorTextFocus && markdownShortcuts:enabled"
+  },
+  {
+    "key": "ctrl+m ctrl+x",
+    "command": "-md-shortcut.toggleCheckboxes",
+    "when": "editorTextFocus && markdownShortcuts:enabled"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-workbench.action.chat.openEditSession",
+    "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+  },
+  {
+    "key": "ctrl+alt+x",
+    "command": "vim.remap",
+    "args": {
+      "after": ["1", "0", "0", "<C-a>"],
+      "mode": "Normal"
+    },
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+alt+a",
+    "command": "vim.remap",
+    "args": {
+      "after": ["1", "0", "0", "<C-x>"],
+      "mode": "Normal"
+    },
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "command": "runCommands",
+    "key": "ctrl+shift+alt+]",
+    "args": {
+      "commands": [
+        "workbench.action.focusSideBar",
+        "workbench.action.decreaseViewSize"
+      ]
+    }
+  },
+  {
+    "command": "runCommands",
+    "key": "ctrl+shift+alt+[",
+    "args": {
+      "commands": [
+        "workbench.action.focusSideBar",
+        "workbench.action.increaseViewSize"
+      ]
+    }
+  },
+  {
+    "command": "runCommands",
+    "key": "ctrl+alt+[",
+    "args": {
+      "commands": ["workbench.action.decreaseViewSize"]
+    }
+  },
+  {
+    "command": "runCommands",
+    "key": "ctrl+alt+]",
+    "args": {
+      "commands": ["workbench.action.increaseViewSize"]
+    }
+  }
 ]

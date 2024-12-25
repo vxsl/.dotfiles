@@ -96,7 +96,7 @@ if [ -z "$AW_STARTED" ]; then
     deactivate
 fi
 
-clone-firefox-profile 3 >/dev/null 2>&1
+# clone-firefox-profile 3 >/dev/null 2>&1
 # clone-firefox-profile 3 --reset &
 
 if [ -f "$HOME/.screenlayout/multihead.sh" ]; then

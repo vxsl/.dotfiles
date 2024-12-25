@@ -21,11 +21,14 @@ source ~/.zsh/antigen.zsh
 # p10k
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
+ZSH_SYSTEM_CLIPBOARD_METHOD=tmux
+
 # wakatime
 antigen bundle unixorn/fzf-zsh-plugin@main
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jeffreytse/zsh-vi-mode
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle kutsan/zsh-system-clipboard
 antigen apply
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -86,6 +89,7 @@ function gcm() {
 source $HOME/bin/personal/dr.zsh
 
 alias ls="lsd --icon never"
+alias copy="xclip -selection clipboard"
 alias dnf="sudo dnf"
 alias pacman="sudo pacman"
 alias mv="mv -vn"
