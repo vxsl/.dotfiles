@@ -1,0 +1,1 @@
+../xdg-home/.zshrc

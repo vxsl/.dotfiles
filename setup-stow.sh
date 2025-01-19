@@ -7,7 +7,7 @@ fi
 
 for dir in */; do
     dir=${dir%/}  # Remove trailing slash
-    if [[ $dir != "xdg-home" ]]; then
+    if [[ $dir != "xdg-home" && $dir != "xdg-home-minimal" ]]; then
         stow -t "/$dir" "$dir"
     fi
 done
