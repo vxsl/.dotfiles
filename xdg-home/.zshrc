@@ -11,8 +11,7 @@ function zvm_after_init() {
     source ~/.zsh/fzf/shell/completion.zsh
 }
 
-# NOTE: install autojump-zsh from system pkg manager
-# NOTE: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
+[[ ! "$PATH" =~ "autojump" ]] && export PATH="$PATH:$HOME/.zsh/autojump/bin"
 
 
 # use antigen
