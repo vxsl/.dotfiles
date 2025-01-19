@@ -141,20 +141,25 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+if [ -d "$HOME/.zsh/powerlevel10k" && ! -f "$HOME/.zsh/powerlevel10k/.env" ]; then
+    cat <<EOF > $HOME/.zsh/powerlevel10k/.env
+P10K_WIZARD_CHOICE_STYLE=4
+P10K_WIZARD_CHOICE_COLOR_SCHEME=2
+P10K_WIZARD_CHOICE_NON_PERMANENT_CONTENT_LOCATION=2
+P10K_WIZARD_CHOICE_TIME=2
+P10K_WIZARD_CHOICE_HEIGHT=1
+P10K_WIZARD_CHOICE_SPACING=1
+P10K_WIZARD_CHOICE_TRANSIENT=y
+P10K_WIZARD_CHOICE_INSTANT_PROMPT_MODE=1
+EOF
+fi
+
 source $HOME/.zsh/autojump/bin/autojump.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if [ -f "$HOME/.p10k.zsh" ]; then
     source "$HOME/.p10k.zsh"
 else
-    P10K_WIZARD_CHOICE_STYLE=4 \
-    P10K_WIZARD_CHOICE_COLOR_SCHEME=2 \
-    P10K_WIZARD_CHOICE_NON_PERMANENT_CONTENT_LOCATION=2 \
-    P10K_WIZARD_CHOICE_TIME=2 \
-    P10K_WIZARD_CHOICE_HEIGHT=1 \
-    P10K_WIZARD_CHOICE_SPACING=1 \
-    P10K_WIZARD_CHOICE_TRANSIENT=y \
-    P10K_WIZARD_CHOICE_INSTANT_PROMPT_MODE=1 \
     p10k configure
 fi
 
