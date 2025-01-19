@@ -141,7 +141,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-if [ -d "$HOME/.zsh/powerlevel10k" && ! -f "$HOME/.zsh/powerlevel10k/.env" ]; then
+if [ -d "$HOME/.zsh/powerlevel10k" ] && [ ! -f "$HOME/.zsh/powerlevel10k/.env" ]; then
     cat <<EOF > $HOME/.zsh/powerlevel10k/.env
 P10K_WIZARD_CHOICE_STYLE=4
 P10K_WIZARD_CHOICE_COLOR_SCHEME=2
