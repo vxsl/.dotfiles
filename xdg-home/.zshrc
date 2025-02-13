@@ -11,8 +11,11 @@ function zvm_after_init() {
     source ~/.zsh/fzf/shell/completion.zsh
 }
 
+export FZF_PATH="$HOME/.zsh/fzf"
+
 [[ ! "$PATH" =~ "autojump" ]] && export PATH="$PATH:$HOME/.zsh/autojump/bin"
 
+setopt HIST_IGNORE_SPACE
 
 # use antigen
 source ~/.zsh/antigen.zsh
@@ -135,9 +138,6 @@ alias lower="setxkbmap -option ctrl:nocaps && xcape -e '#66=Escape"
 
 alias lzd="lazydocker"
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 if [ -d "$HOME/.zsh/powerlevel10k" ] && [ ! -f "$HOME/.zsh/powerlevel10k/.env" ]; then
@@ -166,3 +166,13 @@ fi
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
+
+# pnpm
+export PNPM_HOME="/home/kyle/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+KEYTIMEOUT=1

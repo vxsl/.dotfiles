@@ -94,17 +94,16 @@
     "<C-k>": false
   },
   "vim.visualModeKeyBindingsNonRecursive": [
-    // {
-    //   "before": [
-    //     "u",
-    //   ],
-    //   "commands": [
-    //     "multiCommand.selectHover"
-    //     // "editor.action.showHover",
-    //     // "editor.action.showHover",
-    //   ],
-    //   "when": "isInDiffEditor"
-    // },
+    {
+      // used in conjunction with shift+i in keybindings.json:
+      "before": ["<Home>"],
+      "after": ["<Esc>", "I"]
+    },
+    {
+      // used in conjunction with shift+a in keybindings.json:
+      "before": ["<Insert>"],
+      "after": ["<Esc>", "A"]
+    },
     {
       "before": [
         "<leader>",
@@ -439,7 +438,7 @@
     // "source.fixAll.eslint": true
   },
   "eslint.trace.server": "messages",
-  "eslint.validate": ["javascript"],
+  "eslint.validate": ["typescript", "javascript"],
   "eslint.workingDirectories": [
     {
       "mode": "auto"
@@ -736,10 +735,10 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "[haskell]": {
-    "editor.defaultFormatter": "MaxGabriel.brittany"
-  },
-  "editor.fontSize": 15,
+  // "[haskell]": {
+  //   "editor.defaultFormatter": "MaxGabriel.brittany"
+  // },
+  "editor.fontSize": 18,
   "vim.neovimPath": "/usr/bin/nvim",
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "/home/kyle/.config/nvim-for-vscode/init.lua",
@@ -750,5 +749,12 @@
       "colors": "css"
     }
   ],
-  "debug.focusWindowOnBreak": false
+  "debug.focusWindowOnBreak": false,
+  "[haskell]": {
+    "editor.defaultFormatter": "MaxGabriel.brittany"
+  },
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "~/.local/share/pnpm/node"
+  },
+  "inlineChat.lineNaturalLanguageHint": false
 }

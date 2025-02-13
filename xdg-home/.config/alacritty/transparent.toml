@@ -23,14 +23,14 @@ white = "0xd0d0d0"
 yellow = "0xfeff00"
 
 [colors.primary]
-background = "0x0C0C0C"
+background = "0x000000"
 foreground = "0xffffff"
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 18.0
+size = 12.0
 
 [window]
 opacity = 1

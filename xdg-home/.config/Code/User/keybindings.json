@@ -98,6 +98,11 @@
     "when": "textInputFocus"
   },
   {
+    "key": "ctrl+;",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+  {
     "key": "ctrl+home",
     "command": "-cursorTop",
     "when": "textInputFocus"
@@ -167,10 +172,6 @@
     "command": "-workbench.action.keybindingsReference"
   },
   {
-    "key": "ctrl+alt+b",
-    "command": "workbench.action.toggleActivityBarVisibility"
-  },
-  {
     "key": "ctrl+k ctrl+s",
     "command": "-workbench.action.openGlobalKeybindings"
   },
@@ -214,11 +215,26 @@
     "key": "shift+alt+c shift+alt+p",
     "command": "extension.cm_open_picker"
   },
+  // {
+  //   "key": "ctrl+shift+0",
+  //   "command": "focu",
+  //   "when": "sideBarFocus"
+  // },
   {
-    "key": "ctrl+shift+g",
-    "command": "-workbench.view.scm",
-    "when": "workbench.scm.active"
+    "key": "ctrl+shift+0",
+    "command": "workbench.scm.history.focus",
+    "when": "!sideBarFocus"
   },
+  {
+    "key": "ctrl+shift+0",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "sideBarFocus"
+  },
+  // {
+  //   "key": "ctrl+shift+g",
+  //   "command": "-workbench.view.scm",
+  //   "when": "workbench.scm.active"
+  // },
   {
     "key": "ctrl+space",
     "command": "editor.action.inlineSuggest.commit",
@@ -407,16 +423,18 @@
     "key": "ctrl+alt+k",
     "command": "workbench.action.quickOpenNavigatePrevious"
   },
-  {
-    "key": "ctrl+alt+g /",
-    "command": "gitlens.gitCommands",
-    "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "ctrl+shift+g /",
-    "command": "-gitlens.gitCommands",
-    "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
+
+  // {
+  //   "key": "ctrl+alt+g /",
+  //   "command": "gitlens.gitCommands",
+  //   "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  // },
+  // {
+  //   "key": "ctrl+shift+g /",
+  //   "command": "-gitlens.gitCommands",
+  //   "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  // },
+
   // {
   //     "key": "ctrl+x",
   //     "command": "-editor.action.clipboardCutAction"
@@ -440,8 +458,26 @@
     "command": "git.openChange"
   },
   {
-    "key": "ctrl+shift+g",
-    "command": "workbench.view.scm"
+    "key": "ctrl+alt+b",
+    "command": "gitlens.openFileHistory"
+  },
+  {
+    "key": "ctrl+alt+shift+b",
+    "command": "gitlens.toggleFileBlame"
+  },
+  // {
+  //   "key": "ctrl+shift+g",
+  //   "command": "workbench.view.scm"
+  //   // "command": "extension.multiCommand.execute",
+  //   // "args": {
+  //   //     "sequence": [
+  //   //         "workbench.view.scm",
+  //   //     ]
+  //   // },
+  // },
+  {
+    "key": "ctrl+shift+alt+g",
+    "command": "gitlens.views.scm.grouped.focus"
     // "command": "extension.multiCommand.execute",
     // "args": {
     //     "sequence": [
@@ -462,6 +498,28 @@
   //     //     ]
   //     // },
   // },
+  {
+    "key": "shift+i",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "editor.action.insertCursorAtEndOfEachLineSelected",
+        "extension.vim_home"
+      ]
+    },
+    "when": "editorFocus && extraContext:editorSelectionHasMultipleLines"
+  },
+  {
+    "key": "shift+a",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "editor.action.insertCursorAtEndOfEachLineSelected",
+        "extension.vim_insert"
+      ]
+    },
+    "when": "editorFocus && extraContext:editorSelectionHasMultipleLines"
+  },
   {
     "key": "ctrl+shift+space",
     // "command": "workbench.view.search.focus",

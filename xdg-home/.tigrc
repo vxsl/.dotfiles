@@ -25,7 +25,7 @@ set refresh-interval = 1
 
 color cursor black magenta bold
 
-set diff-highlight = true
+set diff-highlight = "delta"
 
 # https://github.com/jonas/tig/issues/219#issuecomment-406817763
 # compare commit in log view with its parent per http://stackoverflow.com/questions/436362/shorthand-for-diff-of-git-commit-with-its-parent
